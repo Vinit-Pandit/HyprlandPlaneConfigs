@@ -1,0 +1,70 @@
+[2026-08-08 22:07:19] [INFO] random_wallpaper() called
+[2026-08-08 22:07:19] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:07:19] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:07:19] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:07:21] [INFO] random_wallpaper() called
+[2026-08-08 22:07:21] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:07:21] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:07:21] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:07:22] [INFO] random_wallpaper() called
+[2026-08-08 22:07:22] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:07:22] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:07:22] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:09] [INFO] random_wallpaper() called
+[2026-08-08 22:12:09] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:09] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:09] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:10] [INFO] random_wallpaper() called
+[2026-08-08 22:12:10] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:10] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:10] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:10] [INFO] random_wallpaper() called
+[2026-08-08 22:12:10] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:10] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:10] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:11] [INFO] random_wallpaper() called
+[2026-08-08 22:12:11] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:11] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:11] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:11] [INFO] random_wallpaper() called
+[2026-08-08 22:12:11] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:11] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:11] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:12] [INFO] random_wallpaper() called
+[2026-08-08 22:12:12] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:12] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:12] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:12:12] [INFO] random_wallpaper() called
+[2026-08-08 22:12:12] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:12] [ERROR] No wallpaper found in directory: /home/vinit/.config/wallpapers
+[2026-08-08 22:12:12] [ERROR] Could not select a random wallpaper
+[2026-08-08 22:13:38] [INFO] random_wallpaper() called
+[2026-08-08 22:13:38] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:13:38] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/JJK.png
+[2026-08-08 22:13:38] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/JJK.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-08 22:13:38] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/JJK.png
+[2026-08-08 22:13:39] [INFO] random_wallpaper() called
+[2026-08-08 22:13:39] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:13:39] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Girl-Short-Hair.jpg
+[2026-08-08 22:13:39] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Girl-Short-Hair.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-08 22:13:39] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Girl-Short-Hair.jpg
+[2026-08-08 22:13:40] [INFO] random_wallpaper() called
+[2026-08-08 22:13:40] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:13:40] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Batman-Robin.jpg
+[2026-08-08 22:13:40] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Batman-Robin.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-08 22:13:40] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Batman-Robin.jpg
+[2026-08-08 22:13:53] [INFO] random_wallpaper() called
+[2026-08-08 22:13:53] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:13:53] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Gengar.png
+[2026-08-08 22:13:53] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Gengar.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-08 22:13:53] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Gengar.png
+[2026-08-08 22:14:02] [INFO] random_wallpaper() called
+[2026-08-08 22:14:02] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:14:02] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Houses.gif
+[2026-08-08 22:14:02] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Houses.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-08 22:14:02] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Houses.gif
+[2026-08-08 22:14:05] [INFO] random_wallpaper() called
+[2026-08-08 22:14:05] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-08 22:14:05] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/anime_skull.png
+[2026-08-08 22:14:05] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/anime_skull.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-08 22:14:05] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/anime_skull.png
