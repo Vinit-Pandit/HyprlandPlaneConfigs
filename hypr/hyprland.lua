@@ -332,7 +332,7 @@ hl.bind(mod .. " + L", hl.dsp.exit())
 -- TODO: manual review (unknown dispatcher: resizeactive)
 -- hl.bind("$mod + CTRL + Down", hl.dsp.resizeactive("0 20"))
 
-hl.bind(mod .. " + " .. "Tab", hl.dsp.window.cycle_next())
+hl.bind(mod .. " + Tab", hl.dsp.window.cycle_next())
 
 hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "Tab", hl.dsp.window.cycle_next({ next = false }))
 
@@ -583,11 +583,8 @@ hl.layer_rule({
 })
 
 -- Autostart
-hl.on("hyprland.start", function()
-    hl.exec_cmd("swww-daemon")
-    hl.exec_cmd("wal -R -n")
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    hl.exec_cmd("mpd-mpris")
-    hl.exec_cmd("kdeconnect-indicator")
+hl.on("hyprland.shutdown", function()
+    hl.exec_cmd("pkill -x awww-daemon")
+    hl.exec_cmd("pkill -x waybar")
+    hl.exec_cmd("pkill -x nm-applet")
 end)
