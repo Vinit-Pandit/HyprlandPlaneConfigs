@@ -68,3 +68,302 @@
 [2026-08-08 22:14:05] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/anime_skull.png
 [2026-08-08 22:14:05] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/anime_skull.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
 [2026-08-08 22:14:05] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/anime_skull.png
+[2026-08-09 00:44:54] [INFO] random_wallpaper() called
+[2026-08-09 00:44:54] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:44:54] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Scenic-2.jpg
+[2026-08-09 00:44:54] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Scenic-2.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:45:03] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Scenic-2.jpg
+[2026-08-09 00:47:01] [INFO] random_wallpaper() called
+[2026-08-09 00:47:01] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:47:01] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Silver-Surfer.jpg
+[2026-08-09 00:47:01] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Silver-Surfer.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:47:07] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Silver-Surfer.jpg
+[2026-08-09 00:47:12] [INFO] random_wallpaper() called
+[2026-08-09 00:47:12] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:47:12] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/anime.png
+[2026-08-09 00:47:12] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/anime.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:47:18] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/anime.png
+[2026-08-09 00:48:07] [INFO] random_wallpaper() called
+[2026-08-09 00:48:07] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:48:07] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Sonic-Hacking.jpg
+[2026-08-09 00:48:07] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Sonic-Hacking.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:48:07] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Sonic-Hacking.jpg
+[2026-08-09 00:48:08] [INFO] random_wallpaper() called
+[2026-08-09 00:48:08] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:48:08] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/K-on.png
+[2026-08-09 00:48:08] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/K-on.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:48:08] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/K-on.png
+[2026-08-09 00:48:10] [INFO] random_wallpaper() called
+[2026-08-09 00:48:10] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:48:10] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Houses.gif
+[2026-08-09 00:48:10] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Houses.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:48:10] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Houses.gif
+[2026-08-09 00:48:15] [INFO] random_wallpaper() called
+[2026-08-09 00:48:15] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:48:15] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Night.jpg
+[2026-08-09 00:48:15] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Night.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:48:15] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Night.jpg
+[2026-08-09 00:54:38] [INFO] random_wallpaper() called
+[2026-08-09 00:54:38] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:54:38] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Toga.jpg
+[2026-08-09 00:54:38] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Toga.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:54:38] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Toga.jpg
+[2026-08-09 00:54:39] [INFO] random_wallpaper() called
+[2026-08-09 00:54:39] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:54:39] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Cyberpunk-ChinaTown.jpg
+[2026-08-09 00:54:39] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Cyberpunk-ChinaTown.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:54:39] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Cyberpunk-ChinaTown.jpg
+[2026-08-09 00:58:53] [INFO] random_wallpaper() called
+[2026-08-09 00:58:53] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:58:53] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/10.png
+[2026-08-09 00:58:53] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/10.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:58:53] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/10.png
+[2026-08-09 00:59:10] [INFO] random_wallpaper() called
+[2026-08-09 00:59:10] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:59:10] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Teto-2.jpg
+[2026-08-09 00:59:10] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Teto-2.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:59:10] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Teto-2.jpg
+[2026-08-09 00:59:13] [INFO] random_wallpaper() called
+[2026-08-09 00:59:13] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 00:59:13] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Red-Trees.jpg
+[2026-08-09 00:59:13] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Red-Trees.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 90
+[2026-08-09 00:59:13] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Red-Trees.jpg
+[2026-08-09 00:59:29] [INFO] random_video_wallpaper() called
+[2026-08-09 00:59:37] [INFO] random_video_wallpaper() called
+[2026-08-09 01:00:18] [INFO] random_video_wallpaper() called
+[2026-08-09 01:00:40] [INFO] random_video_wallpaper() called
+[2026-08-09 01:00:47] [INFO] random_video_wallpaper() called
+[2026-08-09 01:02:00] [INFO] random_video_wallpaper() called
+[2026-08-09 01:02:00] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:02:00] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:02:00] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:02:00] [INFO] Selected video: /home/vinit/.config/liveWallpapers/crimson-eyes-akame.3840x2160.mp4
+[2026-08-09 01:02:00] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/crimson-eyes-akame.3840x2160.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:02:00] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/crimson-eyes-akame.3840x2160.mp4
+[2026-08-09 01:02:38] [INFO] random_video_wallpaper() called
+[2026-08-09 01:02:38] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:02:38] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:02:38] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:02:38] [INFO] Selected video: /home/vinit/.config/liveWallpapers/katsuki-bakugo-my-hero-academia.3840x2160.mp4
+[2026-08-09 01:02:38] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/katsuki-bakugo-my-hero-academia.3840x2160.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:02:38] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/katsuki-bakugo-my-hero-academia.3840x2160.mp4
+[2026-08-09 01:03:43] [INFO] random_wallpaper() called
+[2026-08-09 01:03:43] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:03:43] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Lain-6.jpg
+[2026-08-09 01:03:43] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Lain-6.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:03:43] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Lain-6.jpg
+[2026-08-09 01:03:56] [INFO] random_wallpaper() called
+[2026-08-09 01:03:56] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:03:56] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Face-Open.jpg
+[2026-08-09 01:03:56] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Face-Open.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:03:56] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Face-Open.jpg
+[2026-08-09 01:04:35] [INFO] random_wallpaper() called
+[2026-08-09 01:04:35] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:35] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/anime_skull.png
+[2026-08-09 01:04:35] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/anime_skull.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:35] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/anime_skull.png
+[2026-08-09 01:04:36] [INFO] random_wallpaper() called
+[2026-08-09 01:04:36] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:36] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Knight-in-Red-Garden.png
+[2026-08-09 01:04:36] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Knight-in-Red-Garden.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:36] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Knight-in-Red-Garden.png
+[2026-08-09 01:04:37] [INFO] random_wallpaper() called
+[2026-08-09 01:04:37] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:37] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Lain-6.jpg
+[2026-08-09 01:04:37] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Lain-6.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:37] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Lain-6.jpg
+[2026-08-09 01:04:37] [INFO] random_wallpaper() called
+[2026-08-09 01:04:37] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:37] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Teto-2.jpg
+[2026-08-09 01:04:37] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Teto-2.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:37] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Teto-2.jpg
+[2026-08-09 01:04:38] [INFO] random_wallpaper() called
+[2026-08-09 01:04:38] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:38] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Scenic.jpg
+[2026-08-09 01:04:38] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Scenic.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:38] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Scenic.jpg
+[2026-08-09 01:04:39] [INFO] random_wallpaper() called
+[2026-08-09 01:04:39] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:39] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Cityscape.gif
+[2026-08-09 01:04:39] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Cityscape.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:39] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Cityscape.gif
+[2026-08-09 01:04:41] [INFO] random_wallpaper() called
+[2026-08-09 01:04:41] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:41] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Purple-Girl.jpg
+[2026-08-09 01:04:41] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Purple-Girl.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:41] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Purple-Girl.jpg
+[2026-08-09 01:04:41] [INFO] random_wallpaper() called
+[2026-08-09 01:04:41] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:04:41] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/anime_girl_plus_rockets.png
+[2026-08-09 01:04:41] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/anime_girl_plus_rockets.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:04:41] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/anime_girl_plus_rockets.png
+[2026-08-09 01:05:20] [INFO] random_wallpaper() called
+[2026-08-09 01:05:20] [INFO] Wallpaper fetch count: 1
+[2026-08-09 01:05:20] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:20] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Cyberpunk.jpg
+[2026-08-09 01:05:20] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Cyberpunk.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:20] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Cyberpunk.jpg
+[2026-08-09 01:05:21] [INFO] random_wallpaper() called
+[2026-08-09 01:05:21] [INFO] Wallpaper fetch count: 2
+[2026-08-09 01:05:21] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:21] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/anime-3.jpg
+[2026-08-09 01:05:21] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/anime-3.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:21] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/anime-3.jpg
+[2026-08-09 01:05:22] [INFO] random_wallpaper() called
+[2026-08-09 01:05:22] [INFO] Wallpaper fetch count: 3
+[2026-08-09 01:05:22] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:22] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Beserk.jpg
+[2026-08-09 01:05:22] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Beserk.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:22] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Beserk.jpg
+[2026-08-09 01:05:23] [INFO] random_wallpaper() called
+[2026-08-09 01:05:23] [INFO] Wallpaper fetch count: 4
+[2026-08-09 01:05:23] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:23] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Lain.jpg
+[2026-08-09 01:05:23] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Lain.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:23] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Lain.jpg
+[2026-08-09 01:05:24] [INFO] random_wallpaper() called
+[2026-08-09 01:05:24] [INFO] Wallpaper fetch count: 5
+[2026-08-09 01:05:24] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:24] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Kon.jpg
+[2026-08-09 01:05:24] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Kon.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:24] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Kon.jpg
+[2026-08-09 01:05:25] [INFO] random_wallpaper() called
+[2026-08-09 01:05:25] [INFO] Wallpaper fetch count: 6
+[2026-08-09 01:05:25] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:25] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Monochrome-2.jpg
+[2026-08-09 01:05:25] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Monochrome-2.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:25] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Monochrome-2.jpg
+[2026-08-09 01:05:27] [INFO] random_wallpaper() called
+[2026-08-09 01:05:27] [INFO] Wallpaper fetch count: 7
+[2026-08-09 01:05:27] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:27] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/The-Amazing-Spiderman.jpg
+[2026-08-09 01:05:27] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/The-Amazing-Spiderman.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:27] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/The-Amazing-Spiderman.jpg
+[2026-08-09 01:05:28] [INFO] random_wallpaper() called
+[2026-08-09 01:05:28] [INFO] Wallpaper fetch count: 8
+[2026-08-09 01:05:28] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:28] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Snow.jpg
+[2026-08-09 01:05:28] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Snow.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:28] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Snow.jpg
+[2026-08-09 01:05:29] [INFO] random_wallpaper() called
+[2026-08-09 01:05:29] [INFO] Wallpaper fetch count: 9
+[2026-08-09 01:05:29] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:29] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Girl-In-Balcony.jpg
+[2026-08-09 01:05:29] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Girl-In-Balcony.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:29] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Girl-In-Balcony.jpg
+[2026-08-09 01:05:31] [INFO] random_wallpaper() called
+[2026-08-09 01:05:31] [INFO] Wallpaper fetch count: 10
+[2026-08-09 01:05:31] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:31] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/5.jpg
+[2026-08-09 01:05:31] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/5.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:31] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/5.jpg
+[2026-08-09 01:05:33] [INFO] random_wallpaper() called
+[2026-08-09 01:05:33] [INFO] Wallpaper fetch count: 11
+[2026-08-09 01:05:33] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:33] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/City-2.gif
+[2026-08-09 01:05:33] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/City-2.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:33] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/City-2.gif
+[2026-08-09 01:05:35] [INFO] random_wallpaper() called
+[2026-08-09 01:05:35] [INFO] Wallpaper fetch count: 12
+[2026-08-09 01:05:35] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:35] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Lain.gif
+[2026-08-09 01:05:35] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Lain.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:35] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Lain.gif
+[2026-08-09 01:05:36] [INFO] random_wallpaper() called
+[2026-08-09 01:05:36] [INFO] Wallpaper fetch count: 13
+[2026-08-09 01:05:36] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:36] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/GTR.jpg
+[2026-08-09 01:05:36] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/GTR.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:36] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/GTR.jpg
+[2026-08-09 01:05:38] [INFO] random_wallpaper() called
+[2026-08-09 01:05:38] [INFO] Wallpaper fetch count: 14
+[2026-08-09 01:05:38] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:38] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/City.gif
+[2026-08-09 01:05:38] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/City.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:38] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/City.gif
+[2026-08-09 01:05:40] [INFO] random_wallpaper() called
+[2026-08-09 01:05:40] [INFO] Wallpaper fetch count: 15
+[2026-08-09 01:05:40] [INFO] Flushing awww cache
+[2026-08-09 01:05:40] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:40] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Toji.jpg
+[2026-08-09 01:05:40] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Toji.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:40] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Toji.jpg
+[2026-08-09 01:05:42] [INFO] random_wallpaper() called
+[2026-08-09 01:05:42] [INFO] Wallpaper fetch count: 16
+[2026-08-09 01:05:42] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:42] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/rainy.jpg
+[2026-08-09 01:05:42] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/rainy.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:42] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/rainy.jpg
+[2026-08-09 01:05:46] [INFO] random_wallpaper() called
+[2026-08-09 01:05:46] [INFO] Wallpaper fetch count: 17
+[2026-08-09 01:05:46] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:05:46] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/sunflowers.png
+[2026-08-09 01:05:46] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/sunflowers.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:05:46] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/sunflowers.png
+[2026-08-09 01:06:29] [INFO] random_wallpaper() called
+[2026-08-09 01:06:29] [INFO] Wallpaper fetch count: 1
+[2026-08-09 01:06:29] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:06:29] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Cherry-Blossom.gif
+[2026-08-09 01:06:29] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Cherry-Blossom.gif" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:06:29] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Cherry-Blossom.gif
+[2026-08-09 01:06:32] [INFO] random_wallpaper() called
+[2026-08-09 01:06:32] [INFO] Wallpaper fetch count: 2
+[2026-08-09 01:06:32] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:06:32] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/bocchi.jpg
+[2026-08-09 01:06:32] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/bocchi.jpg" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:06:32] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/bocchi.jpg
+[2026-08-09 01:06:56] [INFO] random_video_wallpaper() called
+[2026-08-09 01:06:56] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:06:56] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:06:56] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:06:56] [INFO] Selected video: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:06:56] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/liveWallpaper1.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:06:56] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:08:04] [INFO] random_wallpaper() called
+[2026-08-09 01:08:04] [INFO] Wallpaper fetch count: 3
+[2026-08-09 01:08:04] [INFO] Searching for wallpaper in: /home/vinit/.config/wallpapers
+[2026-08-09 01:08:04] [INFO] Selected wallpaper: /home/vinit/.config/wallpapers/Rei-skeleton.png
+[2026-08-09 01:08:04] [INFO] Executing: awww img "/home/vinit/.config/wallpapers/Rei-skeleton.png" --transition-type any --transition-step 150 --transition-duration 1 --transition-fps 240 --transition-angle 70
+[2026-08-09 01:08:04] [ERROR] awww failed while setting wallpaper: /home/vinit/.config/wallpapers/Rei-skeleton.png
+[2026-08-09 01:09:33] [INFO] random_video_wallpaper() called
+[2026-08-09 01:09:33] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:09:33] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:09:33] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:09:33] [INFO] Selected video: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:09:33] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/liveWallpaper1.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:09:33] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:09:35] [INFO] random_video_wallpaper() called
+[2026-08-09 01:09:35] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:09:35] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:09:35] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:09:35] [INFO] Selected video: /home/vinit/.config/liveWallpapers/katsuki-bakugo-my-hero-academia.3840x2160.mp4
+[2026-08-09 01:09:35] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/katsuki-bakugo-my-hero-academia.3840x2160.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:09:35] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/katsuki-bakugo-my-hero-academia.3840x2160.mp4
+[2026-08-09 01:09:45] [INFO] random_video_wallpaper() called
+[2026-08-09 01:09:45] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:09:45] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:09:45] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:09:45] [INFO] Selected video: /home/vinit/.config/liveWallpapers/crimson-eyes-akame.3840x2160.mp4
+[2026-08-09 01:09:45] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/crimson-eyes-akame.3840x2160.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:09:45] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/crimson-eyes-akame.3840x2160.mp4
+[2026-08-09 01:09:46] [INFO] random_video_wallpaper() called
+[2026-08-09 01:09:46] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:09:46] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:09:46] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:09:46] [INFO] Selected video: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:09:46] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/liveWallpaper1.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:09:46] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:09:47] [INFO] random_video_wallpaper() called
+[2026-08-09 01:09:47] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:09:47] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:09:47] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:09:47] [INFO] Selected video: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:09:47] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/liveWallpaper1.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:09:47] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/liveWallpaper1.mp4
+[2026-08-09 01:09:49] [INFO] random_video_wallpaper() called
+[2026-08-09 01:09:49] [INFO] Clearing awww wallpaper...
+[2026-08-09 01:09:49] [INFO] Stopping existing mpvpaper...
+[2026-08-09 01:09:49] [INFO] Searching for video wallpaper in: /home/vinit/.config/liveWallpapers
+[2026-08-09 01:09:49] [INFO] Selected video: /home/vinit/.config/liveWallpapers/tanjiro-kamado-with-flames.3840x2160.mp4
+[2026-08-09 01:09:49] [INFO] Executing (detached): nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" eDP-1 "/home/vinit/.config/liveWallpapers/tanjiro-kamado-with-flames.3840x2160.mp4" > /dev/null 2>&1 &
+[2026-08-09 01:09:49] [ERROR] mpvpaper failed to start for: /home/vinit/.config/liveWallpapers/tanjiro-kamado-with-flames.3840x2160.mp4

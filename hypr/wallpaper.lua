@@ -2,6 +2,8 @@
 local M = {}
 local wallpaper_dir = os.getenv("HOME") .. "/.config/wallpapers"
 local live_wallpaper_dir = os.getenv("HOME") .. "/.config/liveWallpapers"
+local wallpaper_fetch_count = 0
+local CACHE_FLUSH_INTERVAL = 15
 
 -- ─────────────────────────────────────────────
 -- Logging
@@ -24,6 +26,12 @@ local function log(level, message)
 
     -- Also print to Hyprland/Lua output
     print("[wallpaper][" .. level .. "] " .. message)
+end
+
+local function notify(title, message)
+    hl.exec_cmd(
+        'notify-send "' .. title .. '" "' .. message .. '"'
+    )
 end
 
 
@@ -75,8 +83,16 @@ end
 
 
 function M.random_wallpaper()
-
     log_info("random_wallpaper() called")
+    wallpaper_fetch_count = wallpaper_fetch_count + 1
+    log_info("Wallpaper fetch count: " .. wallpaper_fetch_count)
+    if wallpaper_fetch_count % CACHE_FLUSH_INTERVAL == 0 then
+        wallpaper_fetch_count = 0;
+        log_info("Flushing awww cache")
+        hl.exec_cmd("awww clear-cache")
+    end
+
+    hl.exec_cmd("pkill -x mpvpaper 2>/dev/null")
 
     local wallpaper = get_random_wallpaper()
 
@@ -91,11 +107,11 @@ function M.random_wallpaper()
         '--transition-step 150 ' ..
         '--transition-duration 1 ' ..
         '--transition-fps 240 ' ..
-        '--transition-angle 90'
+        '--transition-angle 70'
 
     log_info("Executing: " .. command)
 
-    local result = os.execute(command)
+    local result = hl.exec_cmd(command)
 
     if result ~= true and result ~= 0 then
         log_error(
@@ -140,66 +156,60 @@ end
 -- ─────────────────────────────────────────────
 
 function M.random_video_wallpaper()
-
     log_info("random_video_wallpaper() called")
+    notify("Video Wallpaper", "Changing wallpaper...")
 
-    log_info(
-        "Searching for GIF wallpaper in: "
-        .. live_wallpaper_dir
-    )
+    -- 1. Clear awww but keep daemon alive
+    log_info("Clearing awww wallpaper...")
+    hl.exec_cmd("awww clear")
+
+    -- 2. Kill old mpvpaper and WAIT briefly so it releases the Wayland socket
+    log_info("Stopping existing mpvpaper...")
+    hl.exec_cmd("pkill -x mpvpaper 2>/dev/null")
+
+    log_info("Searching for video wallpaper in: " .. live_wallpaper_dir)
 
     local handle = io.popen(
         'find -L "' .. live_wallpaper_dir .. '" -maxdepth 1 -type f ' ..
-        '\\( -iname "*.gif" \\) | shuf -n1'
+        '\\( -iname "*.mp4" \\) | shuf -n1'
     )
 
     if not handle then
-        log_error("Failed to execute GIF search command")
+        log_error("Failed to execute video search command")
+        notify("Video Wallpaper", "❌ Failed to search for videos")
         return
     end
 
-    local gif = handle:read("*l")
-    local success, _, exit_code = handle:close()
+    local video = handle:read("*l")
+    handle:close()
 
-    if not success then
-        log_error(
-            "GIF search command failed with exit code: "
-            .. tostring(exit_code)
-        )
+    if not video or video == "" then
+        log_error("No video wallpaper found in: " .. live_wallpaper_dir)
+        notify("Video Wallpaper", "❌ No MP4 video found")
         return
     end
 
-    if not gif or gif == "" then
-        log_error(
-            "No GIF wallpaper found in: "
-            .. live_wallpaper_dir
-        )
-        return
-    end
-
-    log_info("Selected GIF: " .. gif)
+    log_info("Selected video: " .. video)
+    local filename = video:match("([^/]+)$") or video
+    notify("Video Wallpaper", "🎬 " .. filename)
 
     local command =
-        'awww img "' .. gif .. '" ' ..
-        '--transition-type any ' ..
-        '--transition-step 150 ' ..
-        '--transition-duration 1 ' ..
-        '--transition-fps 240 ' ..
-        '--transition-angle 90'
+        'nohup mpvpaper -o "--panscan=1.0 --loop-file=inf --no-audio" ' ..
+        'eDP-1 "' .. video .. '" ' ..
+        '> /dev/null 2>&1 &'
 
-    log_info("Executing: " .. command)
+    log_info("Executing (detached): " .. command)
 
-    local result = os.execute(command)
+    local result = hl.exec_cmd(command)
 
     if result ~= true and result ~= 0 then
-        log_error(
-            "awww failed while setting GIF: "
-            .. gif
-        )
+        log_error("mpvpaper failed to start for: " .. video)
+        notify("Video Wallpaper", "❌ Failed to apply " .. filename)
         return
     end
 
-    log_info("GIF wallpaper applied successfully")
+    log_info("Video wallpaper launched successfully")
+    notify("Video Wallpaper", "✓ Applied " .. filename)
 end
 
 
