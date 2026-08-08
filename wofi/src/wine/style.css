@@ -1,0 +1,123 @@
+css
+/* ─────────────────────────────────────────────
+   Dark Wine Wofi
+   ───────────────────────────────────────────── */
+
+* {
+    font-family: "Inconsolata Nerd Font";
+    font-size: 14px;
+}
+
+
+/* Main Wofi window */
+
+window {
+    margin: 0;
+    padding: 10px;
+
+    background-color: #23080e;
+
+    border: 2px solid #b94b5c;
+    border-radius: 10px;
+}
+
+
+/* Outer container */
+
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+
+    background-color: #23080e;
+}
+
+
+/* Inner container */
+
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+
+    background-color: #23080e;
+}
+
+
+/* Search area */
+
+#input {
+    margin: 5px 20px;
+    padding: 10px;
+
+    color: #efd9dc;
+
+    background-color: #321c23;
+
+    border: 1px solid #51373e;
+    border-radius: 7px;
+}
+
+
+/* Search icon */
+
+#input image {
+    color: #e85d70;
+}
+
+
+/* Text */
+
+#text {
+    margin: 5px;
+
+    color: #efd9dc;
+}
+
+
+/* Entries */
+
+#entry {
+    margin: 3px;
+    padding: 7px;
+
+    background-color: #23080e;
+
+    border-radius: 7px;
+}
+
+
+/* Hover */
+
+#entry:hover {
+    background-color: #40272e;
+}
+
+
+/* Selected */
+
+#entry:selected {
+    background-color: #51373e;
+
+    border: 2px solid #e85d70;
+    border-radius: 7px;
+}
+
+#entry:selected #text {
+    color: #f4c2c8;
+}
+
+
+/* Arrow */
+
+#entry arrow {
+    color: #d59aa5;
+}
+
+
+/* Scroll */
+
+#scroll {
+    margin: 0;
+    padding: 10px;
+
+    background-color: #23080e;
+}

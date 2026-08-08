@@ -1,0 +1,266 @@
+/* ─────────────────────────────────────────────
+   Dark Wine / Glass Waybar
+   ───────────────────────────────────────────── */
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+}
+
+/* ─────────────────────────────────────────────
+   Main bar
+   ───────────────────────────────────────────── */
+
+window#waybar {
+  background: rgba(35, 8, 14, 0.35);
+  color: #f2d7d9;
+
+  border-top: 2px solid rgba(180, 70, 82, 0.35);
+  border-bottom: 1px solid rgba(120, 35, 48, 0.25);
+}
+
+/* ─────────────────────────────────────────────
+   Common modules
+   ───────────────────────────────────────────── */
+
+#cpu,
+#memory,
+#pulseaudio,
+#custom-launcher,
+#workspaces,
+#custom-updates,
+#battery,
+#clock,
+#custom-power,
+#tray,
+#network,
+#bluetooth {
+  background: rgba(55, 13, 22, 0.38);
+  color: #efd9dc;
+
+  border: 1px solid rgba(190, 75, 91, 0.25);
+  border-radius: 8px;
+
+  margin: 4px 3px;
+  padding: 0 10px;
+}
+
+/* ─────────────────────────────────────────────
+   CPU / Memory
+   ───────────────────────────────────────────── */
+
+#cpu,
+#memory {
+  background: rgba(75, 18, 29, 0.38);
+  color: #e99aa5;
+
+  border: 1px solid rgba(210, 85, 105, 0.30);
+}
+
+/* ─────────────────────────────────────────────
+   Network
+   ───────────────────────────────────────────── */
+
+#network {
+  color: #e8b0b7;
+}
+
+#network.disconnected {
+  color: #8a5961;
+  background: rgba(35, 10, 15, 0.30);
+}
+
+#network.ethernet {
+  color: #d99ba4;
+}
+
+#network.wifi {
+  color: #e8b0b7;
+}
+
+/* ─────────────────────────────────────────────
+   Bluetooth
+   ───────────────────────────────────────────── */
+
+#bluetooth {
+  color: #e6a5ae;
+}
+
+#bluetooth.connected {
+  color: #ff9eaa;
+  background: rgba(90, 20, 35, 0.42);
+  border-color: rgba(220, 85, 105, 0.35);
+}
+
+#bluetooth.disabled,
+#bluetooth.off {
+  color: #79515a;
+  background: rgba(30, 8, 13, 0.25);
+}
+
+/* ─────────────────────────────────────────────
+   Workspaces
+   ───────────────────────────────────────────── */
+
+#workspaces {
+  padding: 0 4px;
+}
+
+#workspaces button {
+  color: #b98c92;
+  background: transparent;
+
+  border: none;
+  border-radius: 6px;
+
+  margin: 2px;
+  padding: 0 8px;
+
+  transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+  color: #f5c5ca;
+  background: rgba(150, 45, 65, 0.25);
+}
+
+#workspaces button.active {
+  color: #ffe8eb;
+
+  background: rgba(155, 42, 60, 0.45);
+
+  border: 1px solid rgba(220, 95, 110, 0.45);
+
+  box-shadow:
+    inset 0 0 12px rgba(180, 45, 65, 0.20),
+    0 0 8px rgba(170, 40, 60, 0.15);
+}
+
+#workspaces button label {
+  font-size: 15px;
+  letter-spacing: 6px;
+  padding: 0 5px;
+}
+
+/* ─────────────────────────────────────────────
+   Launcher
+   ───────────────────────────────────────────── */
+
+#custom-launcher {
+  color: #ff8f9c;
+
+  background: rgba(100, 20, 35, 0.40);
+
+  border: 1px solid rgba(230, 80, 100, 0.35);
+
+  padding: 0 13px;
+
+  box-shadow:
+    inset 0 0 10px rgba(200, 45, 65, 0.15);
+}
+
+/* ─────────────────────────────────────────────
+   Audio
+   ───────────────────────────────────────────── */
+
+#pulseaudio {
+  color: #e8a5ad;
+}
+
+#pulseaudio.muted {
+  color: #805861;
+  background: rgba(35, 10, 15, 0.30);
+}
+
+/* ─────────────────────────────────────────────
+   Battery
+   ───────────────────────────────────────────── */
+
+#battery {
+  color: #e5b1b7;
+}
+
+#battery.warning {
+  color: #e6a35c;
+}
+
+#battery.critical {
+  color: #ff5c6c;
+
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  to {
+    color: #5a1822;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Clock
+   ───────────────────────────────────────────── */
+
+#clock {
+  color: #f1cdd1;
+
+  background: rgba(75, 15, 27, 0.42);
+
+  border-color: rgba(210, 85, 105, 0.32);
+}
+
+/* ─────────────────────────────────────────────
+   Updates
+   ───────────────────────────────────────────── */
+
+#custom-updates {
+  color: #dba7ae;
+}
+
+/* ─────────────────────────────────────────────
+   Tray
+   ───────────────────────────────────────────── */
+
+#tray {
+  padding: 0 8px;
+}
+
+#tray > .passive {
+  opacity: 0.55;
+}
+
+#tray > .needs-attention {
+  color: #ff7585;
+}
+
+/* ─────────────────────────────────────────────
+   Power
+   ───────────────────────────────────────────── */
+
+#custom-power {
+  color: #ff7f8c;
+
+  background: rgba(90, 15, 28, 0.40);
+
+  border-color: rgba(220, 70, 90, 0.35);
+}
+
+/* ─────────────────────────────────────────────
+   Hover effects
+   ───────────────────────────────────────────── */
+
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#battery:hover,
+#clock:hover,
+#custom-updates:hover,
+#custom-power:hover,
+#custom-launcher:hover,
+#network:hover,
+#bluetooth:hover {
+  background: rgba(110, 25, 40, 0.45);
+  border-color: rgba(225, 95, 110, 0.45);
+}

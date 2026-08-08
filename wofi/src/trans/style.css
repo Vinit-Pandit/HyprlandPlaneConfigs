@@ -1,0 +1,240 @@
+```css
+/* ─────────────────────────────────────────────
+   Dark Wine / Red Theme
+   ───────────────────────────────────────────── */
+
+/* Main palette */
+
+@define-color rosewater #f4c2c8;
+@define-color rosewater-rgb rgb(244, 194, 200);
+
+@define-color flamingo #eea6ae;
+@define-color flamingo-rgb rgb(238, 166, 174);
+
+@define-color pink #e99aa8;
+@define-color pink-rgb rgb(233, 154, 168);
+
+@define-color mauve #d28a98;
+@define-color mauve-rgb rgb(210, 138, 152);
+
+@define-color red #e85d70;
+@define-color red-rgb rgb(232, 93, 112);
+
+@define-color maroon #b94b5c;
+@define-color maroon-rgb rgb(185, 75, 92);
+
+@define-color peach #d98267;
+@define-color peach-rgb rgb(217, 130, 103);
+
+@define-color yellow #dfb56b;
+@define-color yellow-rgb rgb(223, 181, 107);
+
+@define-color green #8dbf91;
+@define-color green-rgb rgb(141, 191, 145);
+
+@define-color teal #79b7ad;
+@define-color teal-rgb rgb(121, 183, 173);
+
+@define-color sky #78b5c4;
+@define-color sky-rgb rgb(120, 181, 196);
+
+@define-color sapphire #639eaf;
+@define-color sapphire-rgb rgb(99, 158, 175);
+
+@define-color blue #7195c4;
+@define-color blue-rgb rgb(113, 149, 196);
+
+@define-color lavender #d59aa5;
+@define-color lavender-rgb rgb(213, 154, 165);
+
+
+/* Text */
+
+@define-color text #efd9dc;
+@define-color text-rgb rgb(239, 217, 220);
+
+@define-color subtext1 #d3b5ba;
+@define-color subtext1-rgb rgb(211, 181, 186);
+
+@define-color subtext0 #b8949a;
+@define-color subtext0-rgb rgb(184, 148, 154);
+
+
+/* Overlays */
+
+@define-color overlay2 #96777d;
+@define-color overlay2-rgb rgb(150, 119, 125);
+
+@define-color overlay1 #785d63;
+@define-color overlay1-rgb rgb(120, 93, 99);
+
+@define-color overlay0 #62494f;
+@define-color overlay0-rgb rgb(98, 73, 79);
+
+
+/* Surfaces */
+
+@define-color surface2 #51373e;
+@define-color surface2-rgb rgb(81, 55, 62);
+
+@define-color surface1 #40272e;
+@define-color surface1-rgb rgb(64, 39, 46);
+
+@define-color surface0 #321c23;
+@define-color surface0-rgb rgb(50, 28, 35);
+
+
+/* Background */
+
+@define-color base #23080e;
+@define-color base-rgb rgb(35, 8, 14);
+
+@define-color mantle #1c070c;
+@define-color mantle-rgb rgb(28, 7, 12);
+
+@define-color crust #120407;
+@define-color crust-rgb rgb(18, 4, 7);
+
+
+/* ─────────────────────────────────────────────
+   Global
+   ───────────────────────────────────────────── */
+
+* {
+    font-family: "Inconsolata Nerd Font", monospace;
+    font-size: 14px;
+}
+
+
+/* ─────────────────────────────────────────────
+   Window
+   ───────────────────────────────────────────── */
+
+window {
+    margin: 0px;
+    padding: 10px;
+
+    border: 2px solid @maroon;
+    border-radius: 8px;
+
+    background-color: @base;
+}
+
+
+/* ─────────────────────────────────────────────
+   Inner Box
+   ───────────────────────────────────────────── */
+
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+
+    border: none;
+    background-color: @base;
+}
+
+
+/* ─────────────────────────────────────────────
+   Outer Box
+   ───────────────────────────────────────────── */
+
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+
+    border: none;
+    background-color: @base;
+}
+
+
+/* ─────────────────────────────────────────────
+   Scroll
+   ───────────────────────────────────────────── */
+
+#scroll {
+    margin: 0px;
+    padding: 10px;
+
+    border: none;
+    background-color: @base;
+}
+
+
+/* ─────────────────────────────────────────────
+   Input
+   ───────────────────────────────────────────── */
+
+#input {
+    margin: 5px 20px;
+    padding: 10px;
+
+    border: 1px solid @surface1;
+    border-radius: 6px;
+
+    color: @text;
+    background-color: @surface0;
+}
+
+#input image {
+    border: none;
+    color: @red;
+}
+
+#input * {
+    outline: 2px solid @red;
+}
+
+
+/* ─────────────────────────────────────────────
+   Text
+   ───────────────────────────────────────────── */
+
+#text {
+    margin: 5px;
+
+    border: none;
+    color: @text;
+}
+
+
+/* ─────────────────────────────────────────────
+   Entries
+   ───────────────────────────────────────────── */
+
+#entry {
+    margin: 3px;
+    padding: 6px;
+
+    border-radius: 6px;
+
+    background-color: @base;
+}
+
+#entry arrow {
+    border: none;
+    color: @lavender;
+}
+
+
+/* ─────────────────────────────────────────────
+   Selected Entry
+   ───────────────────────────────────────────── */
+
+#entry:selected {
+    border: 2px solid @red;
+    background-color: @surface0;
+}
+
+#entry:selected #text {
+    color: @rosewater;
+}
+
+
+/* ─────────────────────────────────────────────
+   Drag & Drop
+   ───────────────────────────────────────────── */
+
+#entry:drop(active) {
+    background-color: @maroon;
+}
+```

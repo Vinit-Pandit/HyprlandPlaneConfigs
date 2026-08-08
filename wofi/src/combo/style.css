@@ -1,0 +1,169 @@
+```css
+/* ─────────────────────────────────────────────
+   Midnight Violet — Diagonal Wofi
+   ───────────────────────────────────────────── */
+
+* {
+    font-family: "Inconsolata Nerd Font";
+    font-size: 14px;
+}
+
+
+/* ─────────────────────────────────────────────
+   Main Wofi Window
+   ───────────────────────────────────────────── */
+
+window {
+    margin: 0;
+    padding: 10px;
+
+    /*
+     * Hard diagonal split:
+     *
+     *       #151A2E
+     *          ╲
+     *           ╲
+     *            ╲
+     *             #2B183F
+     */
+    background-image: linear-gradient(
+        135deg,
+        #151A2E 0%,
+        #151A2E 49.5%,
+        #2B183F 50.5%,
+        #2B183F 100%
+    );
+
+    border: 2px solid #B78CFF;
+    border-radius: 10px;
+}
+
+
+/* ─────────────────────────────────────────────
+   Outer Container
+   ───────────────────────────────────────────── */
+
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+
+    background-color: transparent;
+}
+
+
+/* ─────────────────────────────────────────────
+   Inner Container
+   ───────────────────────────────────────────── */
+
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+
+    background-color: transparent;
+}
+
+
+/* ─────────────────────────────────────────────
+   Search Area
+   ───────────────────────────────────────────── */
+
+#input {
+    margin: 5px 20px;
+    padding: 10px;
+
+    color: #E8E4F2;
+
+    /*
+     * Slightly transparent so the diagonal
+     * background remains visible.
+     */
+    background-color: rgba(20, 16, 40, 0.65);
+
+    border: 1px solid rgba(183, 140, 255, 0.45);
+    border-radius: 7px;
+}
+
+
+/* Search Icon */
+
+#input image {
+    color: #B78CFF;
+}
+
+
+/* ─────────────────────────────────────────────
+   Text
+   ───────────────────────────────────────────── */
+
+#text {
+    margin: 5px;
+
+    color: #E8E4F2;
+}
+
+
+/* ─────────────────────────────────────────────
+   Entries
+   ───────────────────────────────────────────── */
+
+#entry {
+    margin: 3px;
+    padding: 7px;
+
+    /*
+     * Transparent so the diagonal background
+     * remains visible behind the applications.
+     */
+    background-color: transparent;
+
+    border-radius: 7px;
+}
+
+
+/* ─────────────────────────────────────────────
+   Hover
+   ───────────────────────────────────────────── */
+
+#entry:hover {
+    background-color: rgba(183, 140, 255, 0.12);
+
+    border: 1px solid rgba(183, 140, 255, 0.25);
+}
+
+
+/* ─────────────────────────────────────────────
+   Selected Entry
+   ───────────────────────────────────────────── */
+
+#entry:selected {
+    background-color: rgba(183, 140, 255, 0.20);
+
+    border: 2px solid #B78CFF;
+    border-radius: 7px;
+}
+
+#entry:selected #text {
+    color: #FFFFFF;
+}
+
+
+/* ─────────────────────────────────────────────
+   Arrow
+   ───────────────────────────────────────────── */
+
+#entry arrow {
+    color: #B78CFF;
+}
+
+
+/* ─────────────────────────────────────────────
+   Scroll
+   ───────────────────────────────────────────── */
+
+#scroll {
+    margin: 0;
+    padding: 10px;
+
+    background-color: transparent;
+}
+```
