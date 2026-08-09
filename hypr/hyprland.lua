@@ -368,20 +368,69 @@ hl.bind(mod .. " + " .. "P", hl.dsp.window.pseudo())
 
 hl.bind(mod .. " + J", hl.dsp.layout("togglesplit"))
 
-hl.bind("SUPER" .. " + " .. "N", hl.dsp.exec_cmd("swaync-client -t -sw"))
+-- hl.bind("SUPER" .. " + " .. "N", hl.dsp.exec_cmd("swaync-client -t -sw"))
 
-hl.bind("SUPER + SHIFT" .. " + " .. "N", hl.dsp.exec_cmd("swaync-client -C"))
+-- hl.bind("SUPER + SHIFT" .. " + " .. "N", hl.dsp.exec_cmd("swaync-client -C"))
 
-hl.bind("Print", hl.dsp.exec_cmd("grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send \"Screenshot Saved\""))
+-- hl.bind("Print", hl.dsp.exec_cmd("grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send \"Screenshot Saved\""))
 
-hl.bind("SHIFT" .. " + " .. "Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send \"Screenshot Saved\""))
+-- hl.bind("SHIFT" .. " + " .. "Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send \"Screenshot Saved\""))
 
-hl.bind("Menu", hl.dsp.exec_cmd("~/.config/scripts/define.sh"))
+-- hl.bind("Menu", hl.dsp.exec_cmd("~/.config/scripts/define.sh"))
 
-hl.bind(mod .. " + " .. "R", hl.dsp.exec_cmd("gpu-screen-recorder -w screen -f 30 -a default_output -o ~/screen-recordings/$(date +%Y-%m-%d_%H-%M-%S).mp4 & notify-send \"Recording Started\""))
+-- hl.bind(mod .. " + " .. "R", hl.dsp.exec_cmd("gpu-screen-recorder -w screen -f 30 -a default_output -o ~/screen-recordings/$(date +%Y-%m-%d_%H-%M-%S).mp4 & notify-send \"Recording Started\""))
 
-hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "R", hl.dsp.exec_cmd("killall -SIGINT gpu-screen-recorder && notify-send \"Recording Stopped\""))
+-- hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "R", hl.dsp.exec_cmd("killall -SIGINT gpu-screen-recorder && notify-send \"Recording Stopped\""))
 
+-- ============================================================
+-- Screenshots
+-- ============================================================
+
+-- Full screen screenshot
+hl.bind(
+    "Print",
+    hl.dsp.exec_cmd(
+        "mkdir -p ~/Pictures/Screenshots && " ..
+        "grim ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && " ..
+        "notify-send 'Screenshot Saved'"
+    )
+)
+
+-- Area screenshot
+hl.bind(
+    "SHIFT + Print",
+    hl.dsp.exec_cmd(
+        "mkdir -p ~/screenshots && " ..
+        "grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && " ..
+        "notify-send 'Screenshot Saved'"
+    )
+)
+
+
+-- ============================================================
+-- Screen Recording
+-- ============================================================
+
+-- Start recording
+hl.bind(
+    mod .. " + " .. "R",
+    hl.dsp.exec_cmd(
+        "mkdir -p ~/screen-recordings && " ..
+        "gpu-screen-recorder " ..
+        "-w screen " ..
+        "-f 30 " ..
+        "-a default_output " ..
+        "-o ~/vinit/Pictures/screenRecordings/$(date +%Y-%m-%d_%H-%M-%S).mp4 " ..
+        "& notify-send 'Recording Started'"
+    )
+)
+
+hl.bind(
+    mod .. " + SHIFT + R",
+    hl.dsp.exec_cmd(
+        "pkill -SIGINT gpu-screen-recorder; notify-send 'Recording Stopped'"
+    )
+)
 hl.bind(mod .. " + " .. "mouse:272", hl.dsp.window.drag(), { mouse = true })
 
 hl.bind(mod .. " + " .. "mouse:273", hl.dsp.window.resize(), { mouse = true })
@@ -399,188 +448,132 @@ hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("amixer set Master 1%-"))
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("amixer set Master 1%+"))
 
 hl.window_rule({
-    name  = "match_class_lorien",
+    name = "lorien",
     match = {
-        class = "opacity 0.8 1",
+        class = "Lorien",
     },
-    -- TODO: review rule: "match:class Lorien"
+    opacity = "0.8 1",
 })
 
 hl.window_rule({
-    name  = "match_class_sublime_",
+    name = "sublime",
     match = {
-        class = "opacity 0.88 1",
+        class = "sublime_text",
     },
-    -- TODO: review rule: "match:class sublime_text"
+    opacity = "0.88 1",
 })
 
 hl.window_rule({
-    name  = "match_class_thunar",
+    name = "thunar",
     match = {
-        class = "opacity 0.9 1",
+        class = "thunar|Thunar",
     },
-    -- TODO: review rule: "match:class thunar"
+    opacity = "0.9 1",
 })
 
 hl.window_rule({
-    name  = "match_class_thunar",
+    name = "vscodium",
     match = {
-        class = "opacity 0.9 1",
+        class = "code",
     },
-    -- TODO: review rule: "match:class Thunar"
+    opacity = "0.9",
+})
+
+-- hl.window_rule({
+--     name = "codium",
+--     match = {
+--         class = "codium",
+--     },
+--     opacity = "0.88 1",
+-- })
+
+-- hl.window_rule({
+--     name = "zathura",
+--     match = {
+--         class = "org.pwmt.zathura",
+--     },
+--     opacity = "0.9 1",
+-- })
+
+hl.window_rule({
+    name = "brave-browser",
+    match = {
+        class = "brave-browser",
+    },
+    opacity = "1.0 1.0",
 })
 
 hl.window_rule({
-    name  = "match_class_vscodium",
+    name = "mpv",
     match = {
-        class = "opacity 0.88 1",
+        class = "mpv",
     },
-    -- TODO: review rule: "match:class VSCodium"
+    float = true,
+    size = "640 360",
+    center = true,
+    opacity = "1.0 1.0",
 })
 
 hl.window_rule({
-    name  = "match_class_codium",
+    name = "floating_windows",
     match = {
-        class = "opacity 0.88 1",
+        float = true,
     },
-    -- TODO: review rule: "match:class codium"
+    center = true,
 })
 
-hl.window_rule({
-    name  = "match_class_org_pwmt",
-    match = {
-        class = "opacity 0.9 1",
-    },
-    -- TODO: review rule: "match:class org.pwmt.zathura"
-})
+-- hl.window_rule({
+--     name = "scratchterm",
+--     match = {
+--         class = "scratchterm",
+--     },
+--     float = true,
+--     size = "85% 70%",
+--     center = true,
+-- })
 
 hl.window_rule({
-    name  = "match_class_firefox",
+    name = "blueman_popup",
     match = {
-        class = "opacity 1.0 1.0",
+        class = "blueman-manager",
     },
-    -- TODO: review rule: "match:class firefox"
-})
 
-hl.window_rule({
-    name  = "match_class_mpv",
-    match = {
-        class = "float on",
-    },
-    -- TODO: review rule: "match:class mpv"
-})
-
-hl.window_rule({
-    name  = "match_class_mpv",
-    match = {
-        class = "size 640 360",
-    },
-    -- TODO: review rule: "match:class mpv"
-})
-
-hl.window_rule({
-    name  = "match_class_mpv",
-    match = {
-        class = "center on",
-    },
-    -- TODO: review rule: "match:class mpv"
-})
-
-hl.window_rule({
-    name  = "match_class_mpv",
-    match = {
-        class = "opacity 1.0 1.0",
-    },
-    -- TODO: review rule: "match:class mpv"
-})
-
-hl.window_rule({
-    name  = "match_float_yes",
-    match = {
-        class = "center on",
-    },
-    -- TODO: review rule: "match:float yes"
-})
-
-hl.window_rule({
-    name  = "match_class_scratcht",
-    match = {
-        class = "float on",
-    },
-    -- TODO: review rule: "match:class scratchterm"
-})
-
-hl.window_rule({
-    name  = "match_class_scratcht",
-    match = {
-        class = "size 85% 70%",
-    },
-    -- TODO: review rule: "match:class scratchterm"
-})
-
-hl.window_rule({
-    name  = "match_class_scratcht",
-    match = {
-        class = "center on",
-    },
-    -- TODO: review rule: "match:class scratchterm"
+    float = true,
+    size = "300 600",
+    move = "1080 60",
 })
 
 hl.layer_rule({
     match = {
-        namespace = "match:namespace waybar",
+        namespace = "waybar",
     },
     blur = true,
-})
-
-hl.layer_rule({
-    match = {
-        namespace = "match:namespace waybar",
-    },
     ignore_alpha = 0,
 })
 
 hl.layer_rule({
     match = {
-        namespace = "match:namespace swaync-control-center",
+        namespace = "swaync-control-center",
     },
     blur = true,
-})
-
-hl.layer_rule({
-    match = {
-        namespace = "match:namespace swaync-notification-window",
-    },
-    blur = true,
-})
-
-hl.layer_rule({
-    match = {
-        namespace = "match:namespace swaync-control-center",
-    },
     ignore_alpha = 0,
 })
 
 hl.layer_rule({
     match = {
-        namespace = "match:namespace swaync-notification-window",
-    },
-    ignore_alpha = 0,
-})
-
-hl.layer_rule({
-    match = {
-        namespace = "match:namespace quickshell",
+        namespace = "match:namespace swaync",
     },
     blur = true,
-})
-
-hl.layer_rule({
-    match = {
-        namespace = "match:namespace quickshell",
-    },
     ignore_alpha = 0,
 })
+
+-- hl.layer_rule({
+--     match = {
+--         namespace = "match:namespace quickshell",
+--     },
+--     blur = true,
+--     ignore_alpha = 0,
+-- })
 
 -- Autostart
 hl.on("hyprland.shutdown", function()

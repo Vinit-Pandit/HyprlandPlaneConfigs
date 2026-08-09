@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WOFI_THEME="combo"
+WOFI_THEME="wine"
 CONFIG="$HOME/.config/wofi/config"
 STYLE="$HOME/.config/wofi/src/$WOFI_THEME/style.css"
 

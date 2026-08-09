@@ -1,6 +1,84 @@
-css
 /* ─────────────────────────────────────────────
-   Dark Wine Wofi
+   Wofi Themes
+   Uncomment ONE theme only
+   ───────────────────────────────────────────── */
+
+
+/* =================================================
+   THEME 1 — Midnight Violet
+   ================================================= */
+
+/* @define-color bg       #151A2E;
+@define-color surface  #211B35;
+@define-color hover    #30234A;
+@define-color border   #B78CFF;
+@define-color accent   #B78CFF;
+@define-color text     #E8E4F2;
+@define-color selected #3B2A5A; */
+
+
+
+   /* =================================================
+   THEME 2 — Deep Ocean
+   ================================================= */
+
+/* @define-color bg       #0D1B2A;
+@define-color surface  #162A3D;
+@define-color hover    #1E4055;
+@define-color border   #4CC9F0;
+@define-color accent   #4CC9F0;
+@define-color text     #E6F7FF;
+@define-color selected #24506A; */
+
+
+
+
+   /* =================================================
+   THEME 3 — Emerald Night
+   ================================================= */
+
+/* @define-color bg       #0D1F1A;
+@define-color surface  #142D25;
+@define-color hover    #1C4033;
+@define-color border   #5EE6A8;
+@define-color accent   #5EE6A8;
+@define-color text     #E5FFF2;
+@define-color selected #275541; */
+
+
+
+
+   /* =================================================
+   THEME 4 — Dark Amber
+   ================================================= */
+
+/* @define-color bg       #1E1710;
+@define-color surface  #2C2115;
+@define-color hover    #40301B;
+@define-color border   #FFB84D;
+@define-color accent   #FFB84D;
+@define-color text     #FFF1D6;
+@define-color selected #5A401F; */
+
+
+
+/* 
+   =================================================
+   THEME 5 — Crimson Noir
+   ================================================= */
+
+@define-color bg       #1D1016;
+@define-color surface  #2C171F;
+@define-color hover    #42212C;
+@define-color border   #FF6B81;
+@define-color accent   #FF6B81;
+@define-color text     #FFE8EC;
+@define-color selected #5A2937;
+
+
+
+/* ─────────────────────────────────────────────
+   Global
    ───────────────────────────────────────────── */
 
 * {
@@ -9,115 +87,138 @@ css
 }
 
 
-/* Main Wofi window */
+/* ─────────────────────────────────────────────
+   Main Wofi window
+   ───────────────────────────────────────────── */
 
 window {
     margin: 0;
     padding: 10px;
 
-    background-color: #23080e;
+    background-color: @bg;
 
-    border: 2px solid #b94b5c;
+    border: 2px solid @border;
     border-radius: 10px;
 }
 
 
-/* Outer container */
+/* ─────────────────────────────────────────────
+   Outer container
+   ───────────────────────────────────────────── */
 
 #outer-box {
     margin: 5px;
     padding: 10px;
 
-    background-color: #23080e;
+    background-color: @bg;
 }
 
 
-/* Inner container */
+/* ─────────────────────────────────────────────
+   Inner container
+   ───────────────────────────────────────────── */
 
 #inner-box {
     margin: 5px;
     padding: 10px;
 
-    background-color: #23080e;
+    background-color: @bg;
 }
 
 
-/* Search area */
+/* ─────────────────────────────────────────────
+   Search area
+   ───────────────────────────────────────────── */
 
 #input {
     margin: 5px 20px;
     padding: 10px;
 
-    color: #efd9dc;
+    color: @text;
 
-    background-color: #321c23;
+    background-color: @surface;
 
-    border: 1px solid #51373e;
+    border: 1px solid @border;
     border-radius: 7px;
 }
 
 
-/* Search icon */
+/* ─────────────────────────────────────────────
+   Search icon
+   ───────────────────────────────────────────── */
 
 #input image {
-    color: #e85d70;
+    color: @accent;
 }
 
 
-/* Text */
+/* ─────────────────────────────────────────────
+   Text
+   ───────────────────────────────────────────── */
 
 #text {
     margin: 5px;
 
-    color: #efd9dc;
+    color: @text;
 }
 
 
-/* Entries */
+/* ─────────────────────────────────────────────
+   Entries
+   ───────────────────────────────────────────── */
 
 #entry {
     margin: 3px;
     padding: 7px;
 
-    background-color: #23080e;
+    background-color: @bg;
 
     border-radius: 7px;
 }
 
 
-/* Hover */
+/* ─────────────────────────────────────────────
+   Hover
+   ───────────────────────────────────────────── */
 
 #entry:hover {
-    background-color: #40272e;
+    background-color: @hover;
 }
 
 
-/* Selected */
+/* ─────────────────────────────────────────────
+   Selected
+   ───────────────────────────────────────────── */
 
 #entry:selected {
-    background-color: #51373e;
+    background-color: @selected;
 
-    border: 2px solid #e85d70;
+    border: 2px solid @accent;
     border-radius: 7px;
 }
 
+
 #entry:selected #text {
-    color: #f4c2c8;
+    color: #FFFFFF;
 }
 
 
-/* Arrow */
+/* ─────────────────────────────────────────────
+   Arrow
+   ───────────────────────────────────────────── */
 
 #entry arrow {
-    color: #d59aa5;
+    color: @accent;
 }
 
 
-/* Scroll */
+/* ─────────────────────────────────────────────
+   Scroll
+   ───────────────────────────────────────────── */
 
 #scroll {
     margin: 0;
     padding: 10px;
 
-    background-color: #23080e;
+    background-color: @bg;
 }
