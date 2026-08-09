@@ -20,7 +20,8 @@
         "custom/updates",
         "battery",
         "clock",
-        "custom/power"
+        "custom/power",
+        "custom/gpu"
     ],
     "hyprland/workspaces": {
         "all-outputs": true,
@@ -116,6 +117,11 @@
         "format": "  {percentage}%",
         "interval": 500
     },
+    "custom/gpu": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,noheader,nounits",
+        "format": "󰢮 GPU {}",
+        "interval": 2
+    },
     "network": {
         "format-wifi": "󰤨  {essid}",
         "format-ethernet": "󰈀  {ipaddr}",
@@ -138,11 +144,11 @@
         "format": " 󱄠 {volume}%",
         "on-click": "pavucontrol"
     },
-    "custom/updates": {
-        "interval": 1800,
-        "exec": "checkupdates | wc -l",
-        "format": "󰚰 {}"
-    },
+    // "custom/updates": {
+    //     "interval": 1800,
+    //     "exec": "checkupdates | wc -l",
+    //     "format": "󰚰 {}"
+    // },
     "battery": {
         "states": {
             "warning": 30,
@@ -152,15 +158,7 @@
         "format-charging": "󰂄 {capacity}%"
     },
     "clock": {
-        "format": "{:%I:%M %p}",
+        "format": "{:%a, %d %b  %I:%M %p}",
         "tooltip-format": "<tt>{calendar}</tt>"
-    },
-    "custom/power": {
-        "format": "⏻",
-        "on-click": "quickshell -p ~/.config/quickshell/snes-hub/bar/PowerMenu.qml"
-    },
-    "tray": {
-        "icon-size": 16,
-        "spacing": 8
     }
 }

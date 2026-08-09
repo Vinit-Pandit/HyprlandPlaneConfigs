@@ -3,16 +3,17 @@
 local wallpaper = require("wallpaper")
 
 hl.monitor({
-  output = "DP-1",
-  mode = "2560x1600@240",
-  position = "0x0",
-  scale = 1,
+    output = "DP-1",
+    mode = "2560x1600@240",
+    position = "0x0",
+    scale = 1,
 })
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("awww-daemon")
 
-     hl.exec_cmd("waybar")
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 
     -- NetworkManager tray applet
     hl.exec_cmd("nm-applet --indicator")
@@ -75,7 +76,7 @@ hl.config({
 hl.curve("bounce", {
     type = "bezier",
     points = {
-        { 0.0, 1.25 },
+        { 0.0,  1.25 },
         { 0.15, 1.0 },
     },
 })
@@ -83,7 +84,7 @@ hl.curve("bounce", {
 hl.curve("buttery", {
     type = "bezier",
     points = {
-        { 0.1, 1.15 },
+        { 0.1,  1.15 },
         { 0.15, 1.02 },
     },
 })
@@ -91,7 +92,7 @@ hl.curve("buttery", {
 hl.curve("smooth", {
     type = "bezier",
     points = {
-        { 0.0, 0.0 },
+        { 0.0,  0.0 },
         { 0.12, 1.0 },
     },
 })
@@ -296,7 +297,7 @@ hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "space", hl.dsp.window.float())
 hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "W", wallpaper.random_wallpaper)
 
 hl.bind(
-     mod .. "+" .. "ALT + V",
+    mod .. "+" .. "ALT + V",
     wallpaper.random_video_wallpaper
 )
 
@@ -320,17 +321,11 @@ hl.bind(mod .. " + SHIFT + Up", hl.dsp.window.move({ direction = "u" }))
 hl.bind(mod .. " + SHIFT + Right", hl.dsp.window.move({ direction = "r" }))
 hl.bind(mod .. " + L", hl.dsp.exit())
 
--- TODO: manual review (unknown dispatcher: resizeactive)
--- hl.bind("$mod + CTRL + Left", hl.dsp.resizeactive("-20 0"))
+hl.bind(mod .. " + CTRL + Left",  hl.dsp.window.resize({ x = -20, y = 0, relative = true }), { repeating = true })
+hl.bind(mod .. " + CTRL + Right", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
+hl.bind(mod .. " + CTRL + Up",    hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
+hl.bind(mod .. " + CTRL + Down",  hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
 
--- TODO: manual review (unknown dispatcher: resizeactive)
--- hl.bind("$mod + CTRL + Right", hl.dsp.resizeactive("20 0"))
-
--- TODO: manual review (unknown dispatcher: resizeactive)
--- hl.bind("$mod + CTRL + Up", hl.dsp.resizeactive("0 -20"))
-
--- TODO: manual review (unknown dispatcher: resizeactive)
--- hl.bind("$mod + CTRL + Down", hl.dsp.resizeactive("0 20"))
 
 hl.bind(mod .. " + Tab", hl.dsp.window.cycle_next())
 
@@ -437,15 +432,20 @@ hl.bind(mod .. " + " .. "mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 hl.bind("F1", hl.dsp.exec_cmd("amixer set Master toggle"))
 
-hl.bind("F2", hl.dsp.exec_cmd("amixer set Master 1%-"))
+hl.bind("F2", hl.dsp.exec_cmd("amixer set Master 1%-"), { repeating = true })
 
-hl.bind("F3", hl.dsp.exec_cmd("amixer set Master 1%+"))
+hl.bind("F3", hl.dsp.exec_cmd("amixer set Master 1%+"), { repeating = true })
 
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("amixer set Master toggle"))
 
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("amixer set Master 1%-"))
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("amixer set Master 1%-"), { repeating = true })
 
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("amixer set Master 1%+"))
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("amixer set Master 1%+"), { repeating = true })
+
+-- Brightness
+hl.bind("F9", hl.dsp.exec_cmd("brightnessctl set 5%-"), { repeating = true })
+
+hl.bind("F10", hl.dsp.exec_cmd("brightnessctl set 5%+"), { repeating = true })
 
 hl.window_rule({
     name = "lorien",
@@ -462,6 +462,7 @@ hl.window_rule({
     },
     opacity = "0.88 1",
 })
+
 
 hl.window_rule({
     name = "thunar",
