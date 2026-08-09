@@ -41,7 +41,7 @@ hl.config({
     decoration = {
         rounding = 16,
         active_opacity = 1,
-        inactive_opacity = 0.8,
+        inactive_opacity = 0.7,
         dim_inactive = true,
         dim_strength = 0.04,
         shadow = {
@@ -251,7 +251,7 @@ hl.config({
         follow_mouse = 1,
         kb_options = "caps:escape",
         touchpad = {
-            natural_scroll = false,
+            natural_scroll = true,
         },
     },
 })
@@ -346,9 +346,9 @@ hl.bind(mod .. " + " .. 4, hl.dsp.focus({ workspace = 4 }))
 
 hl.bind(mod .. " + " .. 5, hl.dsp.focus({ workspace = 5 }))
 
-hl.bind(mod .. " + " .. "mouse_down", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mod .. " + " .. "ALT + Right", hl.dsp.focus({ workspace = "e+1" }))
 
-hl.bind(mod .. " + " .. "mouse_up", hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(mod .. " + " .. "ALT + Left", hl.dsp.focus({ workspace = "e-1" }))
 
 hl.bind(mod .. " + " .. "SHIFT" .. " + " .. 1, hl.dsp.window.move({ workspace = 1 }))
 

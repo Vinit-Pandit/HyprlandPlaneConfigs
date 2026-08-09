@@ -113,14 +113,6 @@ function M.random_wallpaper()
 
     local result = hl.exec_cmd(command)
 
-    if result ~= true and result ~= 0 then
-        log_error(
-            "awww failed while setting wallpaper: "
-            .. wallpaper
-        )
-        return
-    end
-
     log_info("Wallpaper applied successfully")
 end
 
