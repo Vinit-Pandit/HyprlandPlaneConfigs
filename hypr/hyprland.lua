@@ -17,6 +17,10 @@ hl.on("hyprland.start", function()
 
     -- NetworkManager tray applet
     hl.exec_cmd("nm-applet --indicator")
+
+    -- Clipboard history
+    hl.exec_cmd("wl-paste --type text --watch cliphist store")
+    hl.exec_cmd("wl-paste --type image --watch cliphist store")
 end)
 
 
@@ -282,13 +286,14 @@ hl.config({
 
 -- Application launcher
 hl.bind(mod .. " + " .. "D", function()
-    hl.exec_cmd("~/.config/wofi/launcher.sh")
+    hl.exec_cmd("~/.config/wofi/launcher.sh --show drun")
 end)
 
 hl.bind(mod .. " + " .. "Return", hl.dsp.exec_cmd("kitty"))
 
 hl.bind(mod .. " + " .. "E", hl.dsp.exec_cmd("thunar"))
 
+hl.bind(mod .. " + V", hl.dsp.exec_cmd("cliphist list | ~/.config/wofi/launcher.sh --dmenu | cliphist decode | wl-copy"))
 
 hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "Q", hl.dsp.window.close())
 
@@ -301,7 +306,7 @@ hl.bind(
     wallpaper.random_video_wallpaper
 )
 
-hl.bind(mod .. " + " .. "X", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mod .. " + " .. "L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind(mod .. " + " .. "B", hl.dsp.exec_cmd("brave"))
 
@@ -319,7 +324,6 @@ hl.bind(mod .. " + SHIFT + Left", hl.dsp.window.move({ direction = "l" }))
 hl.bind(mod .. " + SHIFT + Down", hl.dsp.window.move({ direction = "d" }))
 hl.bind(mod .. " + SHIFT + Up", hl.dsp.window.move({ direction = "u" }))
 hl.bind(mod .. " + SHIFT + Right", hl.dsp.window.move({ direction = "r" }))
-hl.bind(mod .. " + L", hl.dsp.exit())
 
 hl.bind(mod .. " + CTRL + Left",  hl.dsp.window.resize({ x = -20, y = 0, relative = true }), { repeating = true })
 hl.bind(mod .. " + CTRL + Right", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
@@ -381,24 +385,14 @@ hl.bind(mod .. " + J", hl.dsp.layout("togglesplit"))
 -- Screenshots
 -- ============================================================
 
--- Full screen screenshot
 hl.bind(
     "Print",
-    hl.dsp.exec_cmd(
-        "mkdir -p ~/Pictures/Screenshots && " ..
-        "grim ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && " ..
-        "notify-send 'Screenshot Saved'"
-    )
+    hl.dsp.exec_cmd("~/.config/hypr/scripts/Screenshot.sh full")
 )
 
--- Area screenshot
 hl.bind(
     "SHIFT + Print",
-    hl.dsp.exec_cmd(
-        "mkdir -p ~/screenshots && " ..
-        "grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && " ..
-        "notify-send 'Screenshot Saved'"
-    )
+    hl.dsp.exec_cmd("~/.config/hypr/scripts/Screenshot.sh area")
 )
 
 
