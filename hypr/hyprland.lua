@@ -3,10 +3,10 @@
 local wallpaper = require("wallpaper")
 
 hl.monitor({
-    output = "DP-1",
+    output = "eDP-1",
     mode = "2560x1600@240",
     position = "0x0",
-    scale = 1,
+    scale = 1.6,
 })
 
 hl.on("hyprland.start", function()
@@ -440,6 +440,8 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("amixer set Master 1%+"), { repe
 hl.bind("F9", hl.dsp.exec_cmd("brightnessctl set 5%-"), { repeating = true })
 
 hl.bind("F10", hl.dsp.exec_cmd("brightnessctl set 5%+"), { repeating = true })
+
+hl.bind("SUPER + M", hl.dsp.exit())
 
 hl.window_rule({
     name = "lorien",
