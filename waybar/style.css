@@ -148,7 +148,8 @@ CPU / Memory
 
 #cpu,
 #memory,
-#custom-gpu {
+#custom-gpu
+{
     background: alpha(@surface, 0.55);
     color: @accent;
 
@@ -289,7 +290,7 @@ Battery
 }
 
 #custom-title {
-    margin-right: 10px;
+    margin-left: 50px;
 }
 
 #battery.critical {
@@ -377,5 +378,130 @@ Hover effects
 #bluetooth:hover {
     background: alpha(@hover, 0.80);
     border-color: alpha(@border, 0.45);
+}
+
+
+/* ───────────────────FOCUSD STYLING─────────────────────*/
+
+/* ─────────────────────────────────────────────
+   FocusD — Dedicated Productivity Widget
+   ───────────────────────────────────────────── */
+
+#custom-focusd {
+    margin: 3px 5px;
+    padding: 0 13px;
+
+    min-width: 105px;
+
+    color: @text;
+    background: alpha(@selected, 0.72);
+
+    border: 1px solid alpha(@accent, 0.55);
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 0 14px alpha(@accent, 0.16),
+        0 0 10px alpha(@accent, 0.18);
+
+    font-weight: bold;
+    transition:
+        background 0.2s ease,
+        border 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Timer text */
+#custom-focusd label {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+/* ───────────── Work ───────────── */
+
+#custom-focusd.work {
+    color: @accent;
+
+    background: alpha(@selected, 0.82);
+
+    border-color: alpha(@accent, 0.75);
+
+    box-shadow:
+        inset 0 0 16px alpha(@accent, 0.20),
+        0 0 12px alpha(@accent, 0.28);
+}
+
+
+/* ───────────── Paused ───────────── */
+
+#custom-focusd.work-paused {
+    color: @warning;
+
+    background: alpha(@surface, 0.70);
+
+    border-color: alpha(@warning, 0.65);
+
+    box-shadow:
+        inset 0 0 12px alpha(@warning, 0.12),
+        0 0 8px alpha(@warning, 0.20);
+}
+
+
+/* ───────────── Short Break ───────────── */
+
+#custom-focusd.short-break {
+    color: @text;
+
+    background: alpha(@surface, 0.65);
+
+    border-color: alpha(@border, 0.55);
+
+    box-shadow:
+        inset 0 0 14px alpha(@accent, 0.10),
+        0 0 8px alpha(@accent, 0.12);
+}
+
+
+/* ───────────── Long Break ───────────── */
+
+#custom-focusd.long-break {
+    color: @accent;
+
+    background: alpha(@selected, 0.60);
+
+    border-color: alpha(@accent, 0.50);
+
+    box-shadow:
+        inset 0 0 18px alpha(@accent, 0.12),
+        0 0 10px alpha(@accent, 0.16);
+}
+
+
+/* ───────────── Paused Break ───────────── */
+
+#custom-focusd.short-break-paused,
+#custom-focusd.long-break-paused {
+    color: @muted;
+
+    background: alpha(@bg, 0.45);
+
+    border-color: alpha(@border, 0.35);
+
+    box-shadow: none;
+}
+
+
+/* ───────────── Hover ───────────── */
+
+#custom-focusd:hover {
+    background: alpha(@hover, 0.90);
+
+    border-color: alpha(@accent, 0.75);
+
+    box-shadow:
+        inset 0 0 18px alpha(@accent, 0.20),
+        0 0 16px alpha(@accent, 0.30);
 }
 

@@ -6,10 +6,11 @@
     "spacing": 0,
     "modules-left": [
         "custom/launcher",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/title"
     ],
     "modules-center": [
-        "custom/title"
+        
     ],
     "modules-right": [
         "cpu",
@@ -21,7 +22,8 @@
         "battery",
         "clock",
         "custom/power",
-        "custom/gpu"
+        "custom/gpu",
+        "custom/focusd"
     ],
     "hyprland/workspaces": {
         "all-outputs": true,
@@ -160,5 +162,23 @@
     "clock": {
         "format": "{:%a, %d %b  %I:%M %p}",
         "tooltip-format": "<tt>{calendar}</tt>"
+    },
+    "custom/focusd": {
+        "return-type": "json",
+        "exec": "focusd status",
+        "interval": 1,
+        "format": "{icon} {text}",
+        "format-icons": {
+            "work": "", // Other options , 🍅
+            "work-paused": "󰏤", //  other options 󰏤 ,,, , or same as above and change opacity from styles.css
+            "short-break": "", // other options ☕, 🍪, 🥤, 
+            "short-break-paused": "󰏤",
+            "long-break": "󰒲", // Other options 🏖️,⏳,🌴
+            "long-break-paused": "󰏤"
+        },
+        "on-click": "focusd toggle",
+        "on-click-right": "focusd next",
+        "on-click-middle": "focusd reset",
+        "tooltip": true
     }
 }
