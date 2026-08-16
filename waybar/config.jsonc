@@ -6,12 +6,10 @@
     "spacing": 0,
     "modules-left": [
         "custom/launcher",
-        "hyprland/workspaces",
-        "custom/title"
+        "hyprland/workspaces"
+        // "custom/title"
     ],
-    "modules-center": [
-        
-    ],
+    "modules-center": [],
     "modules-right": [
         "cpu",
         "memory",
@@ -121,7 +119,7 @@
     },
     "custom/gpu": {
         "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,noheader,nounits",
-        "format": "󰢮 GPU {}",
+        "format": "󰢮  GPU {}",
         "interval": 2
     },
     "network": {
@@ -167,14 +165,14 @@
         "return-type": "json",
         "exec": "focusd status",
         "interval": 1,
-        "format": "{icon} {text}",
+        "format": "{icon} ┃ {text}",
         "format-icons": {
-            "work": "", // Other options , 🍅
-            "work-paused": "󰏤", //  other options 󰏤 ,,, , or same as above and change opacity from styles.css
-            "short-break": "", // other options ☕, 🍪, 🥤, 
-            "short-break-paused": "󰏤",
-            "long-break": "󰒲", // Other options 🏖️,⏳,🌴
-            "long-break-paused": "󰏤"
+            "work": " › ",
+            "work-paused": " › ",
+            "short-break": " › ",
+            "short-break-paused": " › ",
+            "long-break": " › 󰒲",
+            "long-break-paused": " › 󰒲"
         },
         "on-click": "focusd toggle",
         "on-click-right": "focusd next",
