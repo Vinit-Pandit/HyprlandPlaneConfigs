@@ -310,7 +310,7 @@ hl.bind(mod .. " + " .. "L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind(mod .. " + " .. "B", hl.dsp.exec_cmd("brave"))
 
-hl.bind(mod .. " + " .. "F", hl.dsp.window.fullscreen())
+
 
 hl.bind(mod .. " + " .. "Left", hl.dsp.focus({ direction = "left" }))
 
@@ -364,6 +364,9 @@ hl.bind(mod .. " + " .. "S", hl.dsp.workspace.toggle_special(nil))
 hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.window.move({ workspace = "special" }))
 
 hl.bind(mod .. " + " .. "P", hl.dsp.window.pseudo())
+
+-- hl.bind(mod .. " + " .. "F", hl.dsp.window.fullscreen())
+hl.bind(mod .. " + " .. "F", hl.dsp.window.float({ action = "toggle" }))
 
 hl.bind(mod .. " + J", hl.dsp.layout("togglesplit"))
 
