@@ -1,5 +1,5 @@
 # Which preset is currently active
-active_preset = "pomodoro"
+active_preset = "deep_work"
 daily_goal_minutes = 0
 
 # Show desktop notifications when session ends
@@ -35,11 +35,6 @@ short_break_minutes = 10
 long_break_minutes = 30
 sessions_before_long_break = 4
 
-[presets.deep_work]
-work_minutes = 50
-short_break_minutes = 10
-long_break_minutes = 30
-sessions_before_long_break = 4
 
 ## You can add more presets here if you want.
 ## Example:

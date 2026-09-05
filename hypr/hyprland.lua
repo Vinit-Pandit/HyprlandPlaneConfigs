@@ -365,7 +365,7 @@ hl.bind(mod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.window.move({ workspace 
 
 hl.bind(mod .. " + " .. "P", hl.dsp.window.pseudo())
 
--- hl.bind(mod .. " + " .. "F", hl.dsp.window.fullscreen())
+hl.bind(mod .. " + " .. "SHIFT + F", hl.dsp.window.fullscreen())
 hl.bind(mod .. " + " .. "F", hl.dsp.window.float({ action = "toggle" }))
 
 hl.bind(mod .. " + J", hl.dsp.layout("togglesplit"))
